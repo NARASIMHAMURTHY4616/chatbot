@@ -1,0 +1,20 @@
+*{box-sizing:border-box}body{margin:0;font-family:Arial,sans-serif;background:#212121;color:#eee}
+.app{display:flex;height:100vh}
+.sidebar{width:280px;background:#171717;border-right:1px solid #333;display:flex;flex-direction:column}
+#newChatBtn{margin:12px;padding:12px;border:none;border-radius:8px;background:#2f2f2f;color:#fff;cursor:pointer}
+#newChatBtn:hover{background:#3a3a3a}
+.chat-list{overflow:auto;flex:1;padding:8px}
+.chat-item{padding:10px;border-radius:8px;cursor:pointer;margin-bottom:6px;background:#222}
+.chat-item:hover,.chat-item.active{background:#343541}
+.chat-panel{flex:1;display:flex;flex-direction:column}
+.chat-header{padding:16px;border-bottom:1px solid #333}
+.messages{flex:1;overflow:auto;padding:20px;display:flex;flex-direction:column;gap:12px}
+.message{max-width:75%;padding:12px 16px;border-radius:14px;line-height:1.5;white-space:pre-wrap}
+.user{align-self:flex-end;background:#0b57d0;color:#fff}
+.assistant{align-self:flex-start;background:#303030}
+.composer{display:flex;gap:10px;padding:16px;border-top:1px solid #333}
+#messageInput{flex:1;resize:none;border-radius:10px;border:1px solid #444;background:#2a2a2a;color:#fff;padding:10px}
+#sendBtn{padding:10px 18px;border:none;border-radius:10px;background:#0b57d0;color:#fff;cursor:pointer}
+#sendBtn:hover{opacity:.9}
+.typing{font-style:italic;color:#aaa}
+@media(max-width:768px){.sidebar{width:220px}.message{max-width:90%}}

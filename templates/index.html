@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>MEDHA-ai</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/styles/github-dark.min.css">
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+<div class="app">
+  <aside class="sidebar">
+    <button id="newChatBtn">+ New Chat</button>
+    <div id="chatList" class="chat-list"></div>
+  </aside>
+
+  <main class="chat-panel">
+    <header class="chat-header">
+      <h2>MEDHA-AI-BOT</h2>
+<button id="themeToggle" title="Toggle Theme">
+    🌙
+</button>	
+    </header>
+
+    <section id="messages" class="messages"></section>
+
+    <footer class="composer">
+      <textarea id="messageInput" placeholder="Type your message..." rows="2"></textarea>
+      <button id="sendBtn">Send</button>
+    </footer>
+  </main>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/highlight.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>
